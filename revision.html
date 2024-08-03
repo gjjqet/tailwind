@@ -2,33 +2,50 @@
 <html>
     <head>
         <!-- tailwind js 1 -->
-       <script src="https://cdn.tailwindcss.com"></script>
+       <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
         <style>
 
-            
+            .div{
+                width: 200px;
+                height: 200px;
+                background-color: indigo;
+            }
 
+            .div0{
+                background-color: brown;
+                border: 20px solid green;
+            }
+          
+            .div1{
+                background-color: skyblue;
+                border: 20px solid red;
+                box-sizing: border-box;
+            }
+
+            .div2{
+                background-color: aquamarine;
+                border: 20px solid yellow;
+                box-sizing: content-box;
+            }
+        
         </style>
     </head>
     <body>
 
-       <div class="columns-3">
-            <img src="./img/dog.webp" alt="img1" class="aspect-square" >
-            <img src="./img/dog.webp" alt="img1" class="aspect-video">
-            <img src="./img/dog.webp" alt="img1">
-       </div>
+      <div class="div">Normal</div>
 
-       <hr class="my-5"/>
+      <hr/>
 
-       <div class="grid grid-cols-3">
-        <img src="./img/dog.webp" alt="img1" class="aspect-square">
-        <img src="./img/dog.webp" alt="img1">
-        <img src="./img/dog.webp" alt="img1" class="aspect-video">
-       </div>
+      <div class="div div0">Div 0</div>
 
-       <hr class="my-5"/>
+      <hr/>
 
-       <img src="./img/dog.webp" class="aspect-square w-96" alt="">
-       
+      <div class="div div1">Border Box</div>
+
+      <hr/>
+
+      <div class="div div2">Content Box</div>
+    
     </body>
 </html>
