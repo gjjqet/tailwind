@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- tailwind js 1 -->
-       <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <title>With and Height</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style type="text/css">
 
-        <style>
-
-            .box{
-              width: 350px;
-              height: 350px;
-              background-color:#867b7b;
-
-              display: grid;
-              align-content: end;
-
-            }
-
-            .div{
-              width: 100px;
-              height: 100px;
-              background-color: green;
-            }
-
-           
-            .div2{
-              background-color: blue;
-              justify-self: end;
-            }
         
         </style>
     </head>
-    <body>
+    <body class="h-screen bg-stone-900 flex justify-center items-center p-5">
 
-      <div class="box">
-        <div class="div div1"></div>
-        <div class="div div2"></div>
-      </div>
+       <div class="w-96 bg-white rounded-xl p-5">
+          <p class="text-[gray] text-[22px]">Download File</p>
 
+          <div class="w-full h-3 rounded-full my-5 bg-gray-300">
+            <div class="w-[75%] bg-blue-600 h-3 rounded-full " style="background:repeating-linear-gradient(-45deg,green 0,green 20px,yellow 20px,yellow 40px)"></div>
+          </div>
+
+          <p class="text-[gray] text-[13px]">75% downloaded.About 25minutes remaining</p>
+       </div>
+        
     </body>
 </html>
+
+
+<!-- 
+
+flex 
+
+inline
+block 
+hidden 
+grid 
+
+-->
+
+<!--
+
+justify-content
+justify-items
+justify-self
+
+align-items 
+align-self
+align-content
+
+-->
